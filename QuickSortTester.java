@@ -19,7 +19,7 @@ public class QuickSortTester {
 
 	//sort every array
 	for (int[] arr : tester) {
-	    QuickSort.sort(arr);
+	    QuickSort.qsort(arr);
 	}
 
 	//get end time
