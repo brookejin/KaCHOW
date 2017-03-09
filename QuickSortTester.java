@@ -19,7 +19,7 @@ public class QuickSortTester {
 
 	//sort every array
 	for (int[] arr : tester) {
-	    MergeSort.sort(arr);
+	    QuickSort.sort(arr);
 	}
 
 	//get end time
