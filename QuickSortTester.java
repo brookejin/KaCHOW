@@ -46,6 +46,8 @@ public class QuickSortTester {
 	System.out.println(tester(1000));
 	System.out.println(tester(10000));
 	System.out.println(tester(100000));
+	System.out.println(tester(1000000));
+	System.out.println(tester(10000000));
     }//end main
 
 }
