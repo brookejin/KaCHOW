@@ -14,7 +14,7 @@ public class QuickSortTester {
 	}
 
 	//get start time
-	long startTime = System.currentTimeMillis();
+	long startTime = System.nanoTime();
 	//System.out.println(startTime);
 
 	//sort every array
@@ -23,7 +23,7 @@ public class QuickSortTester {
 	}
 
 	//get end time
-	long endTime = System.currentTimeMillis();
+	long endTime = System.nanoTime();
 	//System.out.println(endTime);
 
 	//return average time
@@ -40,14 +40,14 @@ public class QuickSortTester {
      ******************************/
     public static void main( String[] args ) 
     {
-	System.out.println(tester(1));
-	System.out.println(tester(10));
-	System.out.println(tester(100));
-	System.out.println(tester(1000));
-	System.out.println(tester(10000));
-	System.out.println(tester(100000));
-	System.out.println(tester(1000000));
-	System.out.println(tester(10000000));
+	System.out.println(tester(1) + " ns");
+	System.out.println(tester(10) + " ns");
+	System.out.println(tester(100) + " ns");
+	System.out.println(tester(1000) + " ns");
+	System.out.println(tester(10000) + " ns");
+	System.out.println(tester(100000) + " ns");
+	System.out.println(tester(1000000) + " ns");
+	System.out.println(tester(10000000) + " ns");
     }//end main
 
 }
