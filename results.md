@@ -22,7 +22,7 @@ Ascending array
 | Pivot | 1 | 10 | 100 | 1000 | 10000 |
 |-------|---|----|-----|------|-------|
 | upper | 690.0 | 1189.0 | 5350.0 | 209280.0 | 20172876.0 |
-| lower | 703.0 | 955.0 | 5439.0 | 213033.0 | 202608552.0 |
+| lower | 703.0 | 955.0 | 5439.0 | 213033.0 | 20260855.0 |
 | mid   | 741.0 | 781.0 | 4137.0 | 13590.0 | 132605.0 |
 
 Descending array
@@ -52,5 +52,8 @@ This is also similar in descending arrays, though descending arrays took longer 
 |10000|40000|100000000|
 |100000|500000| 10000000000 |
 
+Best case: The best is when the array can be continually cut in half, and when the array is either ascending or descending. The runtime is most similar to O(n).
 
-The rate at which the first two grows is similar to that of n^2, especially from array of size 10000 to that of 100000. ON the contrary, the one that partitions in the middle has one that is similar to nlogn. So worst case scenarios are one in which the partitions have to cut the array one by one, while the best is when the array can be continually cut in half.
+Worst case: The rate at which the first two grow is similar to O(n^2), especially from array of size 10000 to that of 100000. So worst case scenarios are one in which the partitions have to cut the array one by one, and where the array is either ascending or descending.
+
+Average case: The most likely case is when the array is randomly generated, and this runtime models O(nlogn) most closely. 
