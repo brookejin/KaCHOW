@@ -4,6 +4,8 @@ upper = upper bound of the partition
 <br>
 lower = lower bound of the partition
 <br>
+mid = midpoint of the partition (upper + lower) / 2
+<br>
 #EVERYTHING MUST FOLLOW THIS FORMAT; remove heading when done
 
 
@@ -27,7 +29,7 @@ The two sets of data are similar initially, but when they reach a much larger nu
 |100|200|10000|
 |1000|3000|1000000|
 |10000|40000|100000000|
-|100000|500000| |
+|100000|500000| 10000000000 |
 
 
 The rate at which the first two grows is similar to that of n^2, especially from array of size 10000 to that of 100000. ON the contrary, the one that partitions in the middle has one that is similar to nlogn. So worst case scenarios are one in which the partitions have to cut the array one by one, while the best is when the array can be continually cut in half.
