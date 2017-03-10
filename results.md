@@ -10,6 +10,7 @@ mid = midpoint of the partition (upper + lower) / 2
 
 
 Randomly generated array
+
 | Pivot | 1 | 10 | 100 | 1000 | 10000 | 100000 |
 |-------|---|----|-----|------|-------|--------|
 | upper | 3262.0 | 5652.0 | 10811.0 | 63069.0 | 763928.0 |14000340 |
@@ -17,6 +18,7 @@ Randomly generated array
 | mid   | 547.0 | 8516.0 | 19308.0 | 68562.0 | 836691.0 |8817493.0 | 
 
 Ascending array
+
 | Pivot | 1 | 10 | 100 | 1000 | 10000 |
 |-------|---|----|-----|------|-------|
 | upper | 690.0 | 1189.0 | 5350.0 | 209280.0 | 20172876.0 |
@@ -24,6 +26,7 @@ Ascending array
 | mid   | 741.0 | 781.0 | 4137.0 | 13590.0 | 132605.0 |
 
 Descending array
+
 | Pivot | 1 | 10 | 100 | 1000 | 10000 |
 |-------|---|----|-----|------|-------|
 | upper | 732.0 | 1099.0 | 8682.0 | 404935.0 | 38861520.0 |
@@ -37,6 +40,7 @@ Test times for partitions being in the center of the array. As the array is brok
 For randomly generated arrays, the two sets of data are similar initially, but when they reach a much larger number, the partition being placed in the middle is much faster than the other two. 
 
 For ascending arrays, the extreme pivots don't differ by much, and though they start off quicker than randomly generated arrays, the ascending arrays take much longer for large arrays. However, starting at the midpoint, QuickSort sorted the ascending array extremely quickly, beating both the extreme pivots for ascending arrays and all pivots for randomly generated arrays.
+
 This is also similar in descending arrays, though descending arrays took longer overall to sort than ascending arrays. Though the extreme pivots start off quick but took much longer for large arrays than the other data arrangements. In addition, the pivot placed at the midpoint for descending arrays also was much faster than pivots placed at the extremes, at about the same speed as mid-pivots for ascending arrays. 
 
 | n | nlogn | n^2 |
