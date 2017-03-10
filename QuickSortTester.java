@@ -1,4 +1,13 @@
-//Team KaCHOW!
+//Team KaCHOW! -- Brooke Jin, Shiva Vummidi, Brandon Zhang
+//APCS2 pd5
+//Lab01 -- What Does the Data Say?
+//2017-03-10
+
+/*
+  Algorithm: QuickSortTester creates 2D arrays with a constant 1000 rows and varying column length
+  to test the speed of an array 1000 times. 
+  It divides the time result by 1000 to find the average time according to the size of the array.  
+ */
 
 public class QuickSortTester {
 
@@ -13,7 +22,6 @@ public class QuickSortTester {
 	    }
 	}
 
-	//get start time
 	long startTime = System.nanoTime();
 	//System.out.println(startTime);
 
@@ -22,7 +30,6 @@ public class QuickSortTester {
 	    QuickSort.qsort(arr);
 	}
 
-	//get end time
 	long endTime = System.nanoTime();
 	//System.out.println(endTime);
 
