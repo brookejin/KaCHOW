@@ -20,7 +20,7 @@ Test times for partitions being in the center of the array. As the array is brok
 
 The two sets of data are similar initially, but when they reach a much larger number, the partition being placed in the middle is much faster than the other two. 
 
-|size|| n | nlogn | n^2 |
+| n | nlogn | n^2 |
 |-------|---|----|
 |1|0|1|
 |10|10|100|
