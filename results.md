@@ -20,11 +20,14 @@ Test times for partitions being in the center of the array. As the array is brok
 
 The two sets of data are similar initially, but when they reach a much larger number, the partition being placed in the middle is much faster than the other two. 
 
-| n | nlogn | n^2 |
+|size|| n | nlogn | n^2 |
 |-------|---|----|
-|1|0|1|
-|10|10|100|
-|100|200|10000|
-|1000|3000|1000000|
-|10000|40000|100000000|
-|100000|500000| |
+|1||1|0|1|
+|10||10|10|100|
+|100||100|200|10000|
+|1000||1000|3000|1000000|
+|10000||10000|40000|100000000|
+|100000||100000|500000| |
+
+
+The rate at which the first two grows is similar to that of n^2, especially from
