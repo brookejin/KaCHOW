@@ -1,3 +1,5 @@
+#Analysis of QuickSort
+
 Runtimes of QuickSort.java
 <br>
 upper = upper bound of the partition
@@ -6,8 +8,6 @@ lower = lower bound of the partition
 <br>
 mid = midpoint of the partition (upper + lower) / 2
 <br>
-#EVERYTHING MUST FOLLOW THIS FORMAT; remove heading when done
-
 
 Randomly generated array
 
@@ -41,7 +41,7 @@ For randomly generated arrays, the two sets of data are similar initially, but w
 
 For ascending arrays, the extreme pivots don't differ by much, and though they start off quicker than randomly generated arrays, the ascending arrays take much longer for large arrays. However, starting at the midpoint, QuickSort sorted the ascending array extremely quickly, beating both the extreme pivots for ascending arrays and all pivots for randomly generated arrays.
 
-This is also similar in descending arrays, though descending arrays took longer overall to sort than ascending arrays. Though the extreme pivots start off quick but took much longer for large arrays than the other data arrangements. In addition, the pivot placed at the midpoint for descending arrays also was much faster than pivots placed at the extremes, at about the same speed as mid-pivots for ascending arrays. 
+This is also similar in descending arrays, though descending arrays took longer overall to sort than ascending arrays. Though the extreme pivots started off fast, they took much longer for large arrays than the other data arrangements. In addition, the pivot placed at the middle for descending arrays was much faster than pivots placed at the extremes, at about the same speed as mid-pivots for ascending arrays. 
 
 | n | nlogn | n^2 |
 |-------|---|----|
