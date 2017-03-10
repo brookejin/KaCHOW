@@ -19,3 +19,10 @@ Test times for partitions starting from the beginning and the end of the array (
 Test times for partitions being in the center of the array. As the array is broken down by the partitions, new partitions are placed in the middle of the sub arrays to the left and right
 
 The two sets of data are similar initially, but when they reach a much larger number, the partition being placed in the middle is much faster than the other two. 
+
+
+| Pivot | 1 | 10 | 100 | 1000 | 10000 | 100000 |
+|-------|---|----|-----|------|-------|--------|
+| n | 1 | 10 | 100 | 1000 | 10000 | 100000 |
+| nlogn | 0 | 10 | 200 | 3000 | 40000 |500000 |
+| n^2 | 1 | 100 | 10000 | 100000 | 100000000 | | 
