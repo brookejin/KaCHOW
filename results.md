@@ -22,12 +22,12 @@ The two sets of data are similar initially, but when they reach a much larger nu
 
 |size|| n | nlogn | n^2 |
 |-------|---|----|
-|1||1|0|1|
-|10||10|10|100|
-|100||100|200|10000|
-|1000||1000|3000|1000000|
-|10000||10000|40000|100000000|
-|100000||100000|500000| |
+|1|0|1|
+|10|10|100|
+|100|200|10000|
+|1000|3000|1000000|
+|10000|40000|100000000|
+|100000|500000| |
 
 
-The rate at which the first two grows is similar to that of n^2, especially from
+The rate at which the first two grows is similar to that of n^2, especially from array of size 10000 to that of 100000. ON the contrary, the one that partitions in the middle has one that is similar to nlogn. So worst case scenarios are one in which the partitions have to cut the array one by one, while the best is when the array can be continually cut in half.
